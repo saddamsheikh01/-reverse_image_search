@@ -1,0 +1,46 @@
+name: reverse_image_search
+description: Deep Image Search — find visually similar images, exact matches, products, and sources.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  go_router: ^15.1.2
+  dio: ^5.8.0+1
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+  share_plus: ^10.1.4
+  permission_handler: ^11.4.0
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  uuid: ^4.5.1
+  in_app_purchase: ^3.2.1
+  font_awesome_flutter: ^10.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/

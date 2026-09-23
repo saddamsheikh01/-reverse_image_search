@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deep Image Search (dev)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=FLAVOR=development",
+        "--dart-define=SERPAPI_KEY="
+      ]
+    },
+    {
+      "name": "Deep Image Search (release)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "args": [
+        "--dart-define=FLAVOR=production",
+        "--dart-define=SERPAPI_KEY="
+      ]
+    }
+  ]
+}

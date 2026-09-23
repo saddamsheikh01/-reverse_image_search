@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "searchId": "search_visual_1",
+  "queryImage": "https://example.com/query.jpg",
+  "searchType": "visual_matches",
+  "results": {
+    "visualMatches": [
+      {
+        "id": "result_123",
+        "title": "Example Image",
+        "thumbnail": "https://example.com/thumb.jpg",
+        "imageUrl": "https://example.com/image.jpg",
+        "sourceUrl": "https://example.com/page",
+        "sourceDomain": "example.com",
+        "description": "Example description",
+        "price": null,
+        "currency": null,
+        "category": "visual_match"
+      }
+    ],
+    "exactMatches": [],
+    "products": [],
+    "aboutImage": null
+  }
+}

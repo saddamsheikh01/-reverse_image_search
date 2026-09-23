@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "searchId": "search_exact_1",
+  "queryImage": "https://example.com/query.jpg",
+  "searchType": "exact_matches",
+  "results": {
+    "visualMatches": [],
+    "exactMatches": [
+      {
+        "id": "exact_1",
+        "title": "Exact page",
+        "thumbnail": "https://example.com/exact.jpg",
+        "imageUrl": "https://example.com/exact.jpg",
+        "sourceUrl": "https://example.com/exact",
+        "sourceDomain": "example.com",
+        "description": "Exact match page",
+        "category": "exact_match"
+      }
+    ],
+    "products": [],
+    "aboutImage": null
+  }
+}

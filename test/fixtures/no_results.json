@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "searchId": "search_empty_1",
+  "queryImage": "https://example.com/query.jpg",
+  "searchType": "all",
+  "results": {
+    "visualMatches": [],
+    "exactMatches": [],
+    "products": [],
+    "aboutImage": null
+  }
+}

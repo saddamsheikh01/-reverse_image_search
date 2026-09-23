@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "searchId": "search_products_1",
+  "queryImage": "https://example.com/query.jpg",
+  "searchType": "products",
+  "results": {
+    "visualMatches": [],
+    "exactMatches": [],
+    "products": [
+      {
+        "id": "product_123",
+        "title": "Example Product",
+        "thumbnail": "https://example.com/product.jpg",
+        "imageUrl": "https://example.com/product.jpg",
+        "sourceUrl": "https://example.com/product",
+        "sourceDomain": "example.com",
+        "price": "$49.99",
+        "currency": "USD",
+        "category": "product"
+      }
+    ],
+    "aboutImage": null
+  }
+}
