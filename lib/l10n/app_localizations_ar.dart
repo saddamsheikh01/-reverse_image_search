@@ -620,4 +620,166 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get languageNameIndonesian => 'الإندونيسية';
+
+  @override
+  String get languageNameItalian => 'الإيطالية';
+
+  @override
+  String get languageNameAfrikaans => 'الأفريقانية';
+
+  @override
+  String get splashAdNotice => 'قد يعرض هذا الإجراء إعلانًا';
+
+  @override
+  String get selectLanguageTitle => 'اختر اللغة';
+
+  @override
+  String get languageDefault => '(افتراضي)';
+
+  @override
+  String get whoAreYouLookingFor => 'من الذي\nتبحث عنه؟';
+
+  @override
+  String get typeFullNameHint => 'اكتب الاسم الكامل...';
+
+  @override
+  String get modeFaceTitle => 'تحليل الوجه بالذكاء الاصطناعي';
+
+  @override
+  String get modeFaceSubtitle => 'استخدم الكاميرا أو اختر من المعرض للتحليل.';
+
+  @override
+  String get modeSocialTitle => 'بحث عميق في وسائل التواصل';
+
+  @override
+  String get modeSocialSubtitle => 'استخدم منصات التواصل الاجتماعي للتحليل.';
+
+  @override
+  String get modeObjectTitle => 'الأشياء والمعالم بالذكاء الاصطناعي';
+
+  @override
+  String get modeObjectSubtitle => 'استخدم الكاميرا أو اختر من المعرض للتعرّف.';
+
+  @override
+  String get modeSimilarTitle => 'وجوه مشابهة من المعرض';
+
+  @override
+  String get modeSimilarSubtitle => 'استخدم المعرض لاكتشاف الوجه.';
+
+  @override
+  String get modeWebTitle => 'البحث من الويب';
+
+  @override
+  String get modeWebSubtitle =>
+      'استخدم الكاميرا أو اختر من المعرض للبحث في الويب.';
+
+  @override
+  String get modeDuplicateTitle => 'الصور المكررة';
+
+  @override
+  String get modeDuplicateSubtitle => 'نظّف معرضك واحذف الصور المكررة';
+
+  @override
+  String get badgeNew => 'جديد';
+
+  @override
+  String get badgePro => 'Pro';
+
+  @override
+  String get shareApp => 'مشاركة التطبيق';
+
+  @override
+  String get moreApps => 'المزيد من التطبيقات';
+
+  @override
+  String get rateUs => 'قيّمنا';
+
+  @override
+  String get communityGuidelines => 'إرشادات المجتمع';
+
+  @override
+  String get feedback => 'ملاحظات';
+
+  @override
+  String get adBadge => 'إعلان';
+
+  @override
+  String get analyzeImageThroughAi => 'حلّل صورتك عبر الذكاء الاصطناعي.';
+
+  @override
+  String get instagram => 'إنستغرام';
+
+  @override
+  String get facebook => 'فيسبوك';
+
+  @override
+  String get linkedin => 'لينكد إن';
+
+  @override
+  String get twitter => 'تويتر';
+
+  @override
+  String get loadingAd => 'جارٍ تحميل الإعلان';
+
+  @override
+  String get unlockAllFeatures => 'افتح كل الميزات';
+
+  @override
+  String get whatsIncluded => 'ما الذي يتضمنه';
+
+  @override
+  String get featureWebSearching => 'البحث على الويب';
+
+  @override
+  String get featureDuplicateImages => 'الصور المكررة';
+
+  @override
+  String get featureFaceDetection => 'اكتشاف وجه عالي الجودة';
+
+  @override
+  String get featureUnlimitedAccess => 'وصول غير محدود';
+
+  @override
+  String get featureRemoveAds => 'إزالة الإعلانات';
+
+  @override
+  String get featureVipSupport => 'دعم VIP';
+
+  @override
+  String get proTrialWeekly =>
+      'بعد انتهاء التجربة المجانية لـ 3 أيام، يبدأ الاشتراك الأسبوعي. يمكنك الإلغاء في أي وقت قبل 24 ساعة من التجديد';
+
+  @override
+  String get continueForFree => 'تابع مجانًا  ←';
+
+  @override
+  String get noPaymentNow => 'لا يوجد دفع الآن';
+
+  @override
+  String get selectImage => 'اختر صورة';
+
+  @override
+  String get uploadingSerpApi => 'جارٍ رفع الصورة والبحث عبر SerpApi';
+
+  @override
+  String get communityGuidelinesBody =>
+      'استخدم Deep Image Search للبحث القانوني عن الصور فقط.\n\nلا تستخدم هذا التطبيق للمضايقة أو المطاردة أو انتحال الهوية أو استغلال أي شخص. لا تبحث عن محتوى جنسي يخص القاصرين ولا تشاركه.\n\nاحترم خصوصية الآخرين وحقوق نشر الصور التي تجدها. تأتي النتائج من مواقع خارجية وتبقى خاضعة لشروط تلك المواقع.\n\nقد نقيّد أو نرفض عمليات البحث التي تسيء استخدام الخدمة.';
+
+  @override
+  String get privacyPolicyBody =>
+      'يعالج Deep Image Search الصور التي تختارها أو تلتقطها أو تقدّمها عبر رابط لإجراء بحث عكسي عبر SerpApi Google Lens.\n\nتُرفع الصور المحلية إلى مضيف ملفات مؤقت حتى يتمكن مزود البحث من قراءتها. لا نحتفظ بالصور المرفوعة على خادم خاص.\n\nتُجلب نتائج البحث من مواقع خارجية. تبقى تلك المواقع مصدر الصور وقد تكون لها حقوق نشر وشروط خاصة.\n\nيبقى السجل والمفضلة على هذا الجهاز. قد تُجمع أحداث تحليلية مثل فتح التطبيق وبدء البحث واكتماله. لا نجمع محتوى الصور في التحليلات.\n\nتُعالج الاشتراكات عبر Apple أو Google. لا نخزّن بيانات بطاقة الدفع.\n\nيمكنك حذف السجل المحلي وإزالة المفضلة من التطبيق.';
+
+  @override
+  String get allowPhotoAccess => 'اسمح بالوصول إلى الصور للبحث من المعرض.';
+
+  @override
+  String get allowCameraAccess => 'اسمح بالوصول إلى الكاميرا لالتقاط صورة.';
+
+  @override
+  String get emptyImage => 'الصورة المحددة فارغة.';
+
+  @override
+  String shareAppMessage(String url) {
+    return 'جرّب Deep Image Search: $url';
+  }
 }

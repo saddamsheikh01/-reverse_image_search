@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/storage/local_storage.dart';
 import '../../core/theme/app_colors.dart';
+import '../../l10n/app_localizations.dart';
 import '../../services/analytics_service.dart';
 
 class ProScreen extends ConsumerStatefulWidget {
@@ -37,13 +38,14 @@ class _ProScreenState extends ConsumerState<ProScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final rows = const [
-      ('Web searching', true, true),
-      ('Duplicate Images', true, true),
-      ('High quality face detection', false, true),
-      ('Unlimited access', false, true),
-      ('Remove ADS', false, true),
-      ('VIP Support', false, true),
+    final l10n = AppLocalizations.of(context);
+    final rows = [
+      (l10n.featureWebSearching, true, true),
+      (l10n.featureDuplicateImages, true, true),
+      (l10n.featureFaceDetection, false, true),
+      (l10n.featureUnlimitedAccess, false, true),
+      (l10n.featureRemoveAds, false, true),
+      (l10n.featureVipSupport, false, true),
     ];
 
     return Scaffold(
@@ -63,7 +65,7 @@ class _ProScreenState extends ConsumerState<ProScreen> {
             Icon(Icons.travel_explore, size: 88, color: AppColors.primary.withValues(alpha: 0.85)),
             const SizedBox(height: 16),
             Text(
-              'UNLOCK ALL FEATURES',
+              l10n.unlockAllFeatures,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 26,
@@ -74,7 +76,7 @@ class _ProScreenState extends ConsumerState<ProScreen> {
             ),
             const SizedBox(height: 10),
             Text(
-              "What's Included",
+              l10n.whatsIncluded,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -136,7 +138,7 @@ class _ProScreenState extends ConsumerState<ProScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 28),
               child: Text(
-                'After 3 days Free trial ends, Weekly subscription will start. Cancel anytime 24 hours before renewal',
+                l10n.proTrialWeekly,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, color: AppColors.muted(context), height: 1.4),
               ),
@@ -153,9 +155,9 @@ class _ProScreenState extends ConsumerState<ProScreen> {
                     shape: const StadiumBorder(),
                   ),
                   onPressed: _continueFree,
-                  child: const Text(
-                    'CONTINUE FOR FREE  →',
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+                  child: Text(
+                    l10n.continueForFree,
+                    style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
                   ),
                 ),
               ),
@@ -166,7 +168,7 @@ class _ProScreenState extends ConsumerState<ProScreen> {
               children: [
                 const Icon(Icons.check_circle, size: 16, color: AppColors.primary),
                 const SizedBox(width: 6),
-                Text('No payment Now', style: TextStyle(color: AppColors.text(context))),
+                Text(l10n.noPaymentNow, style: TextStyle(color: AppColors.text(context))),
               ],
             ),
             const SizedBox(height: 20),

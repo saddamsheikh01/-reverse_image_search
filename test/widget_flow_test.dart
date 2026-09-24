@@ -40,6 +40,7 @@ Widget _wrap(Widget child, SharedPreferences prefs) {
     ],
     child: MaterialApp(
       theme: AppTheme.light(),
+      locale: const Locale('en'),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: child,

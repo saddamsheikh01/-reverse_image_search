@@ -633,4 +633,171 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get languageNameIndonesian => 'Indonésio';
+
+  @override
+  String get languageNameItalian => 'Italiano';
+
+  @override
+  String get languageNameAfrikaans => 'Afrikaans';
+
+  @override
+  String get splashAdNotice => 'Esta ação pode exibir um anúncio';
+
+  @override
+  String get selectLanguageTitle => 'Selecionar idioma';
+
+  @override
+  String get languageDefault => '(Padrão)';
+
+  @override
+  String get whoAreYouLookingFor => 'Quem você\nestá procurando?';
+
+  @override
+  String get typeFullNameHint => 'Digite o nome completo...';
+
+  @override
+  String get modeFaceTitle => 'Análise facial com IA';
+
+  @override
+  String get modeFaceSubtitle =>
+      'Use a câmera ou escolha da galeria para analisar.';
+
+  @override
+  String get modeSocialTitle => 'Busca profunda em redes sociais';
+
+  @override
+  String get modeSocialSubtitle => 'Use plataformas sociais para analisar.';
+
+  @override
+  String get modeObjectTitle => 'Objetos e marcos com IA';
+
+  @override
+  String get modeObjectSubtitle =>
+      'Use a câmera ou escolha da galeria para reconhecer.';
+
+  @override
+  String get modeSimilarTitle => 'Rostos semelhantes da galeria';
+
+  @override
+  String get modeSimilarSubtitle => 'Use a Galeria para detectar um rosto.';
+
+  @override
+  String get modeWebTitle => 'Pesquisar na web';
+
+  @override
+  String get modeWebSubtitle =>
+      'Use a câmera ou escolha da galeria para pesquisar na web.';
+
+  @override
+  String get modeDuplicateTitle => 'Imagens duplicadas';
+
+  @override
+  String get modeDuplicateSubtitle =>
+      'Limpe sua galeria e exclua imagens duplicadas';
+
+  @override
+  String get badgeNew => 'Novo';
+
+  @override
+  String get badgePro => 'Pro';
+
+  @override
+  String get shareApp => 'Compartilhar app';
+
+  @override
+  String get moreApps => 'Mais apps';
+
+  @override
+  String get rateUs => 'Avalie-nos';
+
+  @override
+  String get communityGuidelines => 'Diretrizes da comunidade';
+
+  @override
+  String get feedback => 'Feedback';
+
+  @override
+  String get adBadge => 'Anúncio';
+
+  @override
+  String get analyzeImageThroughAi => 'Analise sua imagem com IA.';
+
+  @override
+  String get instagram => 'Instagram';
+
+  @override
+  String get facebook => 'Facebook';
+
+  @override
+  String get linkedin => 'LinkedIn';
+
+  @override
+  String get twitter => 'Twitter';
+
+  @override
+  String get loadingAd => 'Carregando anúncio';
+
+  @override
+  String get unlockAllFeatures => 'DESBLOQUEIE TODOS OS RECURSOS';
+
+  @override
+  String get whatsIncluded => 'O que está incluído';
+
+  @override
+  String get featureWebSearching => 'Pesquisa na web';
+
+  @override
+  String get featureDuplicateImages => 'Imagens duplicadas';
+
+  @override
+  String get featureFaceDetection => 'Detecção facial de alta qualidade';
+
+  @override
+  String get featureUnlimitedAccess => 'Acesso ilimitado';
+
+  @override
+  String get featureRemoveAds => 'Remover anúncios';
+
+  @override
+  String get featureVipSupport => 'Suporte VIP';
+
+  @override
+  String get proTrialWeekly =>
+      'Após 3 dias o teste grátis termina e a assinatura semanal começa. Cancele a qualquer momento 24 horas antes da renovação';
+
+  @override
+  String get continueForFree => 'CONTINUAR GRÁTIS  →';
+
+  @override
+  String get noPaymentNow => 'Nenhum pagamento agora';
+
+  @override
+  String get selectImage => 'Selecionar imagem';
+
+  @override
+  String get uploadingSerpApi => 'Enviando a imagem e pesquisando com SerpApi';
+
+  @override
+  String get communityGuidelinesBody =>
+      'Use o Deep Image Search apenas para buscas de imagens legais.\n\nNão use este app para assediar, perseguir, se passar por alguém ou explorar ninguém. Não busque nem compartilhe conteúdo sexual envolvendo menores.\n\nRespeite a privacidade das pessoas e os direitos autorais das imagens encontradas. Os resultados vêm de sites de terceiros e permanecem sob os termos desses sites.\n\nPodemos limitar ou recusar buscas que abusem do serviço.';
+
+  @override
+  String get privacyPolicyBody =>
+      'O Deep Image Search processa imagens que você escolhe, captura ou informa por URL para fazer buscas reversas por imagem via SerpApi Google Lens.\n\nFotos locais são enviadas a um host temporário para o provedor de busca lê-las. Não guardamos imagens enviadas em um servidor próprio.\n\nOs resultados vêm de sites de terceiros. Esses sites continuam sendo a fonte das imagens e podem ter direitos autorais e termos próprios.\n\nHistórico e favoritos ficam neste dispositivo. Eventos de análise como abertura do app, busca iniciada e concluída podem ser coletados. Não coletamos o conteúdo das imagens na análise.\n\nAssinaturas são processadas pela Apple ou Google. Não armazenamos dados de cartão.\n\nVocê pode apagar o histórico local e remover favoritos no app.';
+
+  @override
+  String get allowPhotoAccess =>
+      'Permita o acesso às fotos para pesquisar na galeria.';
+
+  @override
+  String get allowCameraAccess =>
+      'Permita o acesso à câmera para tirar uma foto.';
+
+  @override
+  String get emptyImage => 'A imagem selecionada está vazia.';
+
+  @override
+  String shareAppMessage(String url) {
+    return 'Experimente o Deep Image Search: $url';
+  }
 }

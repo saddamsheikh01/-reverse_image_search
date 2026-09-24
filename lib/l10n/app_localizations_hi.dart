@@ -625,4 +625,172 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get languageNameIndonesian => 'इंडोनेशियाई';
+
+  @override
+  String get languageNameItalian => 'इतालवी';
+
+  @override
+  String get languageNameAfrikaans => 'अफ़्रीकान्स';
+
+  @override
+  String get splashAdNotice => 'यह क्रिया एक विज्ञापन दिखा सकती है';
+
+  @override
+  String get selectLanguageTitle => 'भाषा चुनें';
+
+  @override
+  String get languageDefault => '(डिफ़ॉल्ट)';
+
+  @override
+  String get whoAreYouLookingFor => 'आप किसे\nढूंढ रहे हैं?';
+
+  @override
+  String get typeFullNameHint => 'पूरा नाम लिखें...';
+
+  @override
+  String get modeFaceTitle => 'एआई चेहरा विश्लेषण';
+
+  @override
+  String get modeFaceSubtitle =>
+      'विश्लेषण के लिए कैमरा इस्तेमाल करें या गैलरी से चुनें।';
+
+  @override
+  String get modeSocialTitle => 'सोशल मीडिया गहन खोज';
+
+  @override
+  String get modeSocialSubtitle =>
+      'विश्लेषण के लिए सोशल प्लेटफ़ॉर्म इस्तेमाल करें।';
+
+  @override
+  String get modeObjectTitle => 'एआई वस्तु और स्थल';
+
+  @override
+  String get modeObjectSubtitle =>
+      'पहचान के लिए कैमरा इस्तेमाल करें या गैलरी से चुनें।';
+
+  @override
+  String get modeSimilarTitle => 'गैलरी से मिलते-जुलते चेहरे';
+
+  @override
+  String get modeSimilarSubtitle => 'चेहरा पहचानने के लिए गैलरी इस्तेमाल करें।';
+
+  @override
+  String get modeWebTitle => 'वेब से खोजें';
+
+  @override
+  String get modeWebSubtitle =>
+      'वेब खोज के लिए कैमरा इस्तेमाल करें या गैलरी से चुनें।';
+
+  @override
+  String get modeDuplicateTitle => 'डुप्लिकेट इमेज';
+
+  @override
+  String get modeDuplicateSubtitle => 'गैलरी साफ़ करें और डुप्लिकेट इमेज हटाएँ';
+
+  @override
+  String get badgeNew => 'नया';
+
+  @override
+  String get badgePro => 'Pro';
+
+  @override
+  String get shareApp => 'ऐप शेयर करें';
+
+  @override
+  String get moreApps => 'और ऐप्स';
+
+  @override
+  String get rateUs => 'हमें रेट करें';
+
+  @override
+  String get communityGuidelines => 'समुदाय दिशानिर्देश';
+
+  @override
+  String get feedback => 'प्रतिक्रिया';
+
+  @override
+  String get adBadge => 'विज्ञापन';
+
+  @override
+  String get analyzeImageThroughAi => 'एआई से अपनी इमेज का विश्लेषण करें।';
+
+  @override
+  String get instagram => 'इंस्टाग्राम';
+
+  @override
+  String get facebook => 'फेसबुक';
+
+  @override
+  String get linkedin => 'लिंक्डइन';
+
+  @override
+  String get twitter => 'ट्विटर';
+
+  @override
+  String get loadingAd => 'विज्ञापन लोड हो रहा है';
+
+  @override
+  String get unlockAllFeatures => 'सभी सुविधाएँ अनलॉक करें';
+
+  @override
+  String get whatsIncluded => 'क्या शामिल है';
+
+  @override
+  String get featureWebSearching => 'वेब खोज';
+
+  @override
+  String get featureDuplicateImages => 'डुप्लिकेट इमेज';
+
+  @override
+  String get featureFaceDetection => 'उच्च गुणवत्ता वाला चेहरा पता लगाना';
+
+  @override
+  String get featureUnlimitedAccess => 'असीमित पहुँच';
+
+  @override
+  String get featureRemoveAds => 'विज्ञापन हटाएँ';
+
+  @override
+  String get featureVipSupport => 'वीआईपी सहायता';
+
+  @override
+  String get proTrialWeekly =>
+      '3 दिन का मुफ़्त ट्रायल खत्म होने के बाद साप्ताहिक सदस्यता शुरू होगी। नवीनीकरण से 24 घंटे पहले कभी भी रद्द करें';
+
+  @override
+  String get continueForFree => 'मुफ़्त जारी रखें  →';
+
+  @override
+  String get noPaymentNow => 'अभी कोई भुगतान नहीं';
+
+  @override
+  String get selectImage => 'इमेज चुनें';
+
+  @override
+  String get uploadingSerpApi =>
+      'इमेज अपलोड हो रही है और SerpApi से खोज हो रही है';
+
+  @override
+  String get communityGuidelinesBody =>
+      'Deep Image Search का उपयोग केवल वैध इमेज खोज के लिए करें।\n\nइस ऐप का उपयोग किसी को परेशान करने, पीछा करने, पहचान चुराने या शोषण करने के लिए न करें। नाबालिगों से जुड़ी यौन सामग्री न खोजें और न साझा करें।\n\nदूसरों की गोपनीयता और मिली इमेज के कॉपीराइट का सम्मान करें। परिणाम तीसरे पक्ष की वेबसाइटों से आते हैं और उनके नियमों के अधीन रहते हैं।\n\nसेवा का दुरुपयोग करने वाली खोजों को हम सीमित या अस्वीकार कर सकते हैं।';
+
+  @override
+  String get privacyPolicyBody =>
+      'Deep Image Search उन इमेज को प्रोसेस करता है जिन्हें आप चुनते, कैप्चर करते या URL से देते हैं, ताकि SerpApi Google Lens से रिवर्स इमेज सर्च हो सके।\n\nस्थानीय फ़ोटो एक अस्थायी फ़ाइल होस्ट पर अपलोड होती हैं ताकि सर्च प्रदाता उन्हें पढ़ सके। हम अपलोड की गई इमेज अपने सर्वर पर नहीं रखते।\n\nखोज परिणाम तीसरे पक्ष की वेबसाइटों से आते हैं। वही वेबसाइटें इमेज का स्रोत रहती हैं और उनके अपने कॉपीराइट व नियम हो सकते हैं।\n\nइतिहास और पसंदीदा इसी डिवाइस पर रहते हैं। ऐप खोलना, खोज शुरू होना और पूरी होना जैसे एनालिटिक्स इवेंट एकत्र हो सकते हैं। हम एनालिटिक्स में इमेज सामग्री नहीं लेते।\n\nसब्सक्रिप्शन Apple या Google द्वारा प्रोसेस होते हैं। हम कार्ड विवरण नहीं रखते।\n\nआप ऐप से स्थानीय इतिहास हटा सकते हैं और पसंदीदा निकाल सकते हैं।';
+
+  @override
+  String get allowPhotoAccess =>
+      'गैलरी से खोजने के लिए फ़ोटो एक्सेस की अनुमति दें।';
+
+  @override
+  String get allowCameraAccess =>
+      'फ़ोटो लेने के लिए कैमरा एक्सेस की अनुमति दें।';
+
+  @override
+  String get emptyImage => 'चुनी गई इमेज खाली है।';
+
+  @override
+  String shareAppMessage(String url) {
+    return 'Deep Image Search आज़माएँ: $url';
+  }
 }

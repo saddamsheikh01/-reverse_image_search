@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_af.dart';
 import 'app_localizations_ar.dart';
 import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
@@ -12,6 +13,7 @@ import 'app_localizations_es.dart';
 import 'app_localizations_fr.dart';
 import 'app_localizations_hi.dart';
 import 'app_localizations_id.dart';
+import 'app_localizations_it.dart';
 import 'app_localizations_pt.dart';
 import 'app_localizations_tr.dart';
 import 'app_localizations_ur.dart';
@@ -102,6 +104,7 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('af'),
     Locale('ar'),
     Locale('de'),
     Locale('en'),
@@ -109,6 +112,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('hi'),
     Locale('id'),
+    Locale('it'),
     Locale('pt'),
     Locale('tr'),
     Locale('ur'),
@@ -1301,6 +1305,318 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Indonesian'**
   String get languageNameIndonesian;
+
+  /// No description provided for @languageNameItalian.
+  ///
+  /// In en, this message translates to:
+  /// **'Italian'**
+  String get languageNameItalian;
+
+  /// No description provided for @languageNameAfrikaans.
+  ///
+  /// In en, this message translates to:
+  /// **'Afrikaans'**
+  String get languageNameAfrikaans;
+
+  /// No description provided for @splashAdNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'This action may perform an ad'**
+  String get splashAdNotice;
+
+  /// No description provided for @selectLanguageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Language'**
+  String get selectLanguageTitle;
+
+  /// No description provided for @languageDefault.
+  ///
+  /// In en, this message translates to:
+  /// **'(Default)'**
+  String get languageDefault;
+
+  /// No description provided for @whoAreYouLookingFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Who are you\nlooking for?'**
+  String get whoAreYouLookingFor;
+
+  /// No description provided for @typeFullNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type full name...'**
+  String get typeFullNameHint;
+
+  /// No description provided for @modeFaceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI Face Analysis'**
+  String get modeFaceTitle;
+
+  /// No description provided for @modeFaceSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use camera or select from gallery for analyzation.'**
+  String get modeFaceSubtitle;
+
+  /// No description provided for @modeSocialTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Social Media Deep Search'**
+  String get modeSocialTitle;
+
+  /// No description provided for @modeSocialSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use social platforms for analyzation.'**
+  String get modeSocialSubtitle;
+
+  /// No description provided for @modeObjectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'AI Object & Landmark'**
+  String get modeObjectTitle;
+
+  /// No description provided for @modeObjectSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use camera or select from gallery for recognition.'**
+  String get modeObjectSubtitle;
+
+  /// No description provided for @modeSimilarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Similar Faces from gallery'**
+  String get modeSimilarTitle;
+
+  /// No description provided for @modeSimilarSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Gallery to detect Face.'**
+  String get modeSimilarSubtitle;
+
+  /// No description provided for @modeWebTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search from Web'**
+  String get modeWebTitle;
+
+  /// No description provided for @modeWebSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use camera or select from gallery to search from Web.'**
+  String get modeWebSubtitle;
+
+  /// No description provided for @modeDuplicateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Duplicate Images'**
+  String get modeDuplicateTitle;
+
+  /// No description provided for @modeDuplicateSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Clean up your gallery delete duplicate images'**
+  String get modeDuplicateSubtitle;
+
+  /// No description provided for @badgeNew.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get badgeNew;
+
+  /// No description provided for @badgePro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro'**
+  String get badgePro;
+
+  /// No description provided for @shareApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Share App'**
+  String get shareApp;
+
+  /// No description provided for @moreApps.
+  ///
+  /// In en, this message translates to:
+  /// **'More Apps'**
+  String get moreApps;
+
+  /// No description provided for @rateUs.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate Us'**
+  String get rateUs;
+
+  /// No description provided for @communityGuidelines.
+  ///
+  /// In en, this message translates to:
+  /// **'Community Guidelines'**
+  String get communityGuidelines;
+
+  /// No description provided for @feedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Feedback'**
+  String get feedback;
+
+  /// No description provided for @adBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Ad'**
+  String get adBadge;
+
+  /// No description provided for @analyzeImageThroughAi.
+  ///
+  /// In en, this message translates to:
+  /// **'Analyze your image through AI.'**
+  String get analyzeImageThroughAi;
+
+  /// No description provided for @instagram.
+  ///
+  /// In en, this message translates to:
+  /// **'Instagram'**
+  String get instagram;
+
+  /// No description provided for @facebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Facebook'**
+  String get facebook;
+
+  /// No description provided for @linkedin.
+  ///
+  /// In en, this message translates to:
+  /// **'LinkedIn'**
+  String get linkedin;
+
+  /// No description provided for @twitter.
+  ///
+  /// In en, this message translates to:
+  /// **'Twitter'**
+  String get twitter;
+
+  /// No description provided for @loadingAd.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading Ad'**
+  String get loadingAd;
+
+  /// No description provided for @unlockAllFeatures.
+  ///
+  /// In en, this message translates to:
+  /// **'UNLOCK ALL FEATURES'**
+  String get unlockAllFeatures;
+
+  /// No description provided for @whatsIncluded.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s Included'**
+  String get whatsIncluded;
+
+  /// No description provided for @featureWebSearching.
+  ///
+  /// In en, this message translates to:
+  /// **'Web searching'**
+  String get featureWebSearching;
+
+  /// No description provided for @featureDuplicateImages.
+  ///
+  /// In en, this message translates to:
+  /// **'Duplicate Images'**
+  String get featureDuplicateImages;
+
+  /// No description provided for @featureFaceDetection.
+  ///
+  /// In en, this message translates to:
+  /// **'High quality face detection'**
+  String get featureFaceDetection;
+
+  /// No description provided for @featureUnlimitedAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited access'**
+  String get featureUnlimitedAccess;
+
+  /// No description provided for @featureRemoveAds.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove ADS'**
+  String get featureRemoveAds;
+
+  /// No description provided for @featureVipSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Support'**
+  String get featureVipSupport;
+
+  /// No description provided for @proTrialWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'After 3 days Free trial ends, Weekly subscription will start. Cancel anytime 24 hours before renewal'**
+  String get proTrialWeekly;
+
+  /// No description provided for @continueForFree.
+  ///
+  /// In en, this message translates to:
+  /// **'CONTINUE FOR FREE  →'**
+  String get continueForFree;
+
+  /// No description provided for @noPaymentNow.
+  ///
+  /// In en, this message translates to:
+  /// **'No payment Now'**
+  String get noPaymentNow;
+
+  /// No description provided for @selectImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Select image'**
+  String get selectImage;
+
+  /// No description provided for @uploadingSerpApi.
+  ///
+  /// In en, this message translates to:
+  /// **'Uploading image and searching with SerpApi'**
+  String get uploadingSerpApi;
+
+  /// No description provided for @communityGuidelinesBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Deep Image Search for lawful image lookup only.\n\nDo not use this app to harass, stalk, impersonate, or exploit anyone. Do not search for or share sexual content involving minors.\n\nRespect other people\'s privacy and the copyright of images you find. Results come from third-party websites and remain under those sites\' terms.\n\nWe may limit or refuse searches that abuse the service.'**
+  String get communityGuidelinesBody;
+
+  /// No description provided for @privacyPolicyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Deep Image Search processes images you pick, capture, or provide by URL so we can perform reverse image searches through SerpApi Google Lens.\n\nLocal photos are uploaded to a temporary file host so the search provider can read them. We do not keep uploaded images on a custom server.\n\nSearch results are retrieved from third-party websites. Those websites remain the source of the images and may have their own copyright and terms.\n\nHistory and favorites stay on this device. Analytics events such as app opens, search started, and search completed may be collected. We do not collect image contents in analytics.\n\nSubscriptions are processed by Apple or Google. We do not store payment card details.\n\nYou can delete local history and remove favorites from the app.'**
+  String get privacyPolicyBody;
+
+  /// No description provided for @allowPhotoAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow photo access to search from gallery.'**
+  String get allowPhotoAccess;
+
+  /// No description provided for @allowCameraAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow camera access to take a photo.'**
+  String get allowCameraAccess;
+
+  /// No description provided for @emptyImage.
+  ///
+  /// In en, this message translates to:
+  /// **'The selected image is empty.'**
+  String get emptyImage;
+
+  /// No description provided for @shareAppMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Try Deep Image Search: {url}'**
+  String shareAppMessage(String url);
 }
 
 class _AppLocalizationsDelegate
@@ -1314,6 +1630,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
+    'af',
     'ar',
     'de',
     'en',
@@ -1321,6 +1638,7 @@ class _AppLocalizationsDelegate
     'fr',
     'hi',
     'id',
+    'it',
     'pt',
     'tr',
     'ur',
@@ -1333,6 +1651,8 @@ class _AppLocalizationsDelegate
 AppLocalizations lookupAppLocalizations(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'af':
+      return AppLocalizationsAf();
     case 'ar':
       return AppLocalizationsAr();
     case 'de':
@@ -1347,6 +1667,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsHi();
     case 'id':
       return AppLocalizationsId();
+    case 'it':
+      return AppLocalizationsIt();
     case 'pt':
       return AppLocalizationsPt();
     case 'tr':

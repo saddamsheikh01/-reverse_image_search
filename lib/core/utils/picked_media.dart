@@ -22,7 +22,7 @@ class PickedMedia {
       if (storage.isPermanentlyDenied) {
         throw const AppException(
           code: AppErrorCode.validation,
-          message: 'Allow photo access to search from gallery.',
+          message: 'allowPhotoAccess',
         );
       }
     } else {
@@ -30,7 +30,7 @@ class PickedMedia {
       if (!camera.isGranted) {
         throw const AppException(
           code: AppErrorCode.validation,
-          message: 'Allow camera access to take a photo.',
+          message: 'allowCameraAccess',
         );
       }
     }
@@ -49,7 +49,7 @@ class PickedMedia {
     if (bytes.isEmpty) {
       throw const AppException(
         code: AppErrorCode.invalidImage,
-        message: 'The selected image is empty.',
+        message: 'emptyImage',
       );
     }
 

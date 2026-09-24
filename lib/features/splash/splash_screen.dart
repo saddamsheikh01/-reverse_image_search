@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/constants/app_constants.dart';
 import '../../core/theme/app_colors.dart';
+import '../../l10n/app_localizations.dart';
 import '../../services/analytics_service.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
@@ -56,18 +57,18 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
             const Spacer(),
             const _SearchLogo(),
             const SizedBox(height: 28),
-            const Text(
-              'Deep Image Search',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context).appName,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 26,
                 fontWeight: FontWeight.w600,
               ),
             ),
             const Spacer(),
-            const Text(
-              'This action may perform an ad',
-              style: TextStyle(color: Colors.white, fontSize: 14),
+            Text(
+              AppLocalizations.of(context).splashAdNotice,
+              style: const TextStyle(color: Colors.white, fontSize: 14),
             ),
             const SizedBox(height: 16),
             Padding(

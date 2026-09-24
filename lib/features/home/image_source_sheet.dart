@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../core/theme/app_colors.dart';
+import '../../l10n/app_localizations.dart';
 
 class ImageSourceSheet extends StatelessWidget {
   const ImageSourceSheet({super.key});
@@ -19,6 +20,7 @@ class ImageSourceSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
@@ -35,7 +37,7 @@ class ImageSourceSheet extends StatelessWidget {
             ),
             const SizedBox(height: 18),
             Text(
-              'Select image',
+              l10n.selectImage,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w700,
@@ -48,7 +50,7 @@ class ImageSourceSheet extends StatelessWidget {
                 Expanded(
                   child: _SourceCard(
                     icon: Icons.photo_library_outlined,
-                    label: 'Gallery',
+                    label: l10n.gallery,
                     onTap: () => Navigator.pop(context, ImageSource.gallery),
                   ),
                 ),
@@ -56,7 +58,7 @@ class ImageSourceSheet extends StatelessWidget {
                 Expanded(
                   child: _SourceCard(
                     icon: Icons.photo_camera_outlined,
-                    label: 'Camera',
+                    label: l10n.camera,
                     onTap: () => Navigator.pop(context, ImageSource.camera),
                   ),
                 ),

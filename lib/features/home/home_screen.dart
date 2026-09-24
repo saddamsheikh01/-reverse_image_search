@@ -4,10 +4,12 @@ import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../core/errors/app_exception.dart';
+import '../../core/errors/app_exception_l10n.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/picked_media.dart';
 import '../../core/utils/url_validator.dart';
 import '../../core/widgets/app_widgets.dart';
+import '../../l10n/app_localizations.dart';
 import '../../models/search_type.dart';
 import '../../models/user_models.dart';
 import '../../services/analytics_service.dart';
@@ -46,43 +48,43 @@ class _HomeMode {
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   final _name = TextEditingController();
 
-  static const _modes = [
-    _HomeMode(
-      title: 'AI Face Analysis',
-      subtitle: 'Use camera or select from gallery for analyzation.',
-      icon: HomeIconKind.face,
-      badge: 'New',
-    ),
-    _HomeMode(
-      title: 'Social Media Deep Search',
-      subtitle: 'Use social platforms for analyzation.',
-      icon: HomeIconKind.twitter,
-      badge: 'New',
-      social: true,
-    ),
-    _HomeMode(
-      title: 'AI Object & Landmark',
-      subtitle: 'Use camera or select from gallery for recognition.',
-      icon: HomeIconKind.plant,
-    ),
-    _HomeMode(
-      title: 'Similar Faces from gallery',
-      subtitle: 'Use Gallery to detect Face.',
-      icon: HomeIconKind.photo,
-      badge: 'Pro',
-      pro: true,
-    ),
-    _HomeMode(
-      title: 'Search from Web',
-      subtitle: 'Use camera or select from gallery to search from Web.',
-      icon: HomeIconKind.globe,
-    ),
-    _HomeMode(
-      title: 'Duplicate Images',
-      subtitle: 'Clean up your gallery delete duplicate images',
-      icon: HomeIconKind.duplicate,
-    ),
-  ];
+  List<_HomeMode> _modes(AppLocalizations l10n) => [
+        _HomeMode(
+          title: l10n.modeFaceTitle,
+          subtitle: l10n.modeFaceSubtitle,
+          icon: HomeIconKind.face,
+          badge: l10n.badgeNew,
+        ),
+        _HomeMode(
+          title: l10n.modeSocialTitle,
+          subtitle: l10n.modeSocialSubtitle,
+          icon: HomeIconKind.twitter,
+          badge: l10n.badgeNew,
+          social: true,
+        ),
+        _HomeMode(
+          title: l10n.modeObjectTitle,
+          subtitle: l10n.modeObjectSubtitle,
+          icon: HomeIconKind.plant,
+        ),
+        _HomeMode(
+          title: l10n.modeSimilarTitle,
+          subtitle: l10n.modeSimilarSubtitle,
+          icon: HomeIconKind.photo,
+          badge: l10n.badgePro,
+          pro: true,
+        ),
+        _HomeMode(
+          title: l10n.modeWebTitle,
+          subtitle: l10n.modeWebSubtitle,
+          icon: HomeIconKind.globe,
+        ),
+        _HomeMode(
+          title: l10n.modeDuplicateTitle,
+          subtitle: l10n.modeDuplicateSubtitle,
+          icon: HomeIconKind.duplicate,
+        ),
+      ];
 
   @override
   void dispose() {
@@ -126,12 +128,16 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       if (mounted) context.push('/searching', extra: SearchType.all.apiValue);
     } on AppException catch (error) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error.message)));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(localizedAppException(AppLocalizations.of(context), error))),
+      );
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final modes = _modes(l10n);
     final textColor = AppColors.text(context);
     final muted = AppColors.muted(context);
     final cardColor = AppColors.card(context);
@@ -167,11 +173,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                             ),
                           ),
                         ),
-                        const Expanded(
+                        Expanded(
                           child: Text(
-                            'Deep Image Search',
+                            l10n.appName,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -188,10 +194,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       ],
                     ),
                     const SizedBox(height: 18),
-                    const Text(
-                      'Who are you\nlooking for?',
+                    Text(
+                      l10n.whoAreYouLookingFor,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 28,
                         fontWeight: FontWeight.w700,
@@ -201,7 +207,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     const SizedBox(height: 18),
                     AppTextField(
                       controller: _name,
-                      hint: 'Type full name...',
+                      hint: l10n.typeFullNameHint,
                       prefix: const Icon(Icons.search, color: AppColors.mutedLight),
                       onSubmitted: (_) => _pickAndSearch(),
                     ),
@@ -213,10 +219,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           Expanded(
             child: ListView.separated(
               padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
-              itemCount: _modes.length,
+              itemCount: modes.length,
               separatorBuilder: (_, _) => const SizedBox(height: 12),
               itemBuilder: (context, index) {
-                final mode = _modes[index];
+                final mode = modes[index];
                 return Material(
                   color: cardColor,
                   elevation: 1,

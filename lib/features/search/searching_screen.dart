@@ -105,9 +105,9 @@ class _SearchingScreenState extends ConsumerState<SearchingScreen> {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
-                const Text(
-                  'Uploading image and searching with SerpApi',
-                  style: TextStyle(color: Colors.white70, fontSize: 13),
+                Text(
+                  l10n.uploadingSerpApi,
+                  style: const TextStyle(color: Colors.white70, fontSize: 13),
                 ),
                 const SizedBox(height: 28),
                 const Padding(

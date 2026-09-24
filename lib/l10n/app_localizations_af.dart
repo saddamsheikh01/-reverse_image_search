@@ -4,9 +4,9 @@ import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
 
-/// The translations for English (`en`).
-class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn([String locale = 'en']) : super(locale);
+/// The translations for Afrikaans (`af`).
+class AppLocalizationsAf extends AppLocalizations {
+  AppLocalizationsAf([String locale = 'af']) : super(locale);
 
   @override
   String get appName => 'Deep Image Search';
@@ -21,7 +21,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get skip => 'Skip';
 
   @override
-  String get next => 'Next';
+  String get next => 'Volgende';
 
   @override
   String get getStarted => 'Get Started';
@@ -208,7 +208,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gallery => 'Gallery';
 
   @override
-  String get camera => 'Camera';
+  String get camera => 'Kamera';
 
   @override
   String get searchFromUrl => 'Search from Image URL';
@@ -324,19 +324,19 @@ class AppLocalizationsEn extends AppLocalizations {
       'Find information and context about the image.';
 
   @override
-  String get analyzingImage => 'Analyzing image...';
+  String get analyzingImage => 'Ontleed beeld...';
 
   @override
-  String get searchingWeb => 'Searching the web...';
+  String get searchingWeb => 'Soek op die web...';
 
   @override
-  String get findingVisualMatches => 'Finding visual matches...';
+  String get findingVisualMatches => 'Soek visuele ooreenkomste...';
 
   @override
-  String get findingRelatedResults => 'Finding related results...';
+  String get findingRelatedResults => 'Soek verwante resultate...';
 
   @override
-  String get searchResults => 'Search Results';
+  String get searchResults => 'Soekresultate';
 
   @override
   String get tabAll => 'All';
@@ -438,7 +438,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get manageSubscription => 'Manage Subscription';
 
   @override
-  String get language => 'Language';
+  String get language => 'Taal';
 
   @override
   String get notifications => 'Notifications';
@@ -486,7 +486,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get saveHistoryAutomatically => 'Save history automatically';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => 'Privaatheidsbeleid';
 
   @override
   String get termsOfService => 'Terms of Service';
@@ -603,122 +603,123 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get languageNameEnglish => 'English';
+  String get languageNameEnglish => 'Engels';
 
   @override
-  String get languageNameUrdu => 'Urdu';
+  String get languageNameUrdu => 'Oerdoe';
 
   @override
-  String get languageNameArabic => 'Arabic';
+  String get languageNameArabic => 'Arabies';
 
   @override
   String get languageNameHindi => 'Hindi';
 
   @override
-  String get languageNameSpanish => 'Spanish';
+  String get languageNameSpanish => 'Spaans';
 
   @override
-  String get languageNameFrench => 'French';
+  String get languageNameFrench => 'Frans';
 
   @override
-  String get languageNameGerman => 'German';
+  String get languageNameGerman => 'Duits';
 
   @override
-  String get languageNamePortuguese => 'Portuguese';
+  String get languageNamePortuguese => 'Portugees';
 
   @override
-  String get languageNameTurkish => 'Turkish';
+  String get languageNameTurkish => 'Turks';
 
   @override
-  String get languageNameIndonesian => 'Indonesian';
+  String get languageNameIndonesian => 'Indonesies';
 
   @override
-  String get languageNameItalian => 'Italian';
+  String get languageNameItalian => 'Italiaans';
 
   @override
   String get languageNameAfrikaans => 'Afrikaans';
 
   @override
-  String get splashAdNotice => 'This action may perform an ad';
+  String get splashAdNotice => 'Hierdie aksie kan \'n advertensie wys';
 
   @override
-  String get selectLanguageTitle => 'Select Language';
+  String get selectLanguageTitle => 'Kies taal';
 
   @override
-  String get languageDefault => '(Default)';
+  String get languageDefault => '(Verstek)';
 
   @override
-  String get whoAreYouLookingFor => 'Who are you\nlooking for?';
+  String get whoAreYouLookingFor => 'Na wie\nsoek jy?';
 
   @override
-  String get typeFullNameHint => 'Type full name...';
+  String get typeFullNameHint => 'Tik die volle naam...';
 
   @override
-  String get modeFaceTitle => 'AI Face Analysis';
+  String get modeFaceTitle => 'KI-gesigsanalise';
 
   @override
   String get modeFaceSubtitle =>
-      'Use camera or select from gallery for analyzation.';
+      'Gebruik die kamera of kies uit die gallery vir ontleding.';
 
   @override
-  String get modeSocialTitle => 'Social Media Deep Search';
+  String get modeSocialTitle => 'Sosiale media diepsoektog';
 
   @override
-  String get modeSocialSubtitle => 'Use social platforms for analyzation.';
+  String get modeSocialSubtitle => 'Gebruik sosiale platforms vir ontleding.';
 
   @override
-  String get modeObjectTitle => 'AI Object & Landmark';
+  String get modeObjectTitle => 'KI-voorwerp en landmerk';
 
   @override
   String get modeObjectSubtitle =>
-      'Use camera or select from gallery for recognition.';
+      'Gebruik die kamera of kies uit die gallery vir herkenning.';
 
   @override
-  String get modeSimilarTitle => 'Similar Faces from gallery';
+  String get modeSimilarTitle => 'Soortgelyke gesigte uit die gallery';
 
   @override
-  String get modeSimilarSubtitle => 'Use Gallery to detect Face.';
+  String get modeSimilarSubtitle =>
+      'Gebruik die Gallery om \'n gesig op te spoor.';
 
   @override
-  String get modeWebTitle => 'Search from Web';
+  String get modeWebTitle => 'Soek vanaf die web';
 
   @override
   String get modeWebSubtitle =>
-      'Use camera or select from gallery to search from Web.';
+      'Gebruik die kamera of kies uit die gallery om op die web te soek.';
 
   @override
-  String get modeDuplicateTitle => 'Duplicate Images';
+  String get modeDuplicateTitle => 'Duplikaatbeelde';
 
   @override
   String get modeDuplicateSubtitle =>
-      'Clean up your gallery delete duplicate images';
+      'Maak jou gallery skoon en vee duplikaatbeelde uit';
 
   @override
-  String get badgeNew => 'New';
+  String get badgeNew => 'Nuut';
 
   @override
   String get badgePro => 'Pro';
 
   @override
-  String get shareApp => 'Share App';
+  String get shareApp => 'Deel program';
 
   @override
-  String get moreApps => 'More Apps';
+  String get moreApps => 'Meer programme';
 
   @override
-  String get rateUs => 'Rate Us';
+  String get rateUs => 'Gradeer ons';
 
   @override
-  String get communityGuidelines => 'Community Guidelines';
+  String get communityGuidelines => 'Gemeenskapsriglyne';
 
   @override
-  String get feedback => 'Feedback';
+  String get feedback => 'Terugvoer';
 
   @override
   String get adBadge => 'Ad';
 
   @override
-  String get analyzeImageThroughAi => 'Analyze your image through AI.';
+  String get analyzeImageThroughAi => 'Ontleed jou beeld met KI.';
 
   @override
   String get instagram => 'Instagram';
@@ -733,67 +734,69 @@ class AppLocalizationsEn extends AppLocalizations {
   String get twitter => 'Twitter';
 
   @override
-  String get loadingAd => 'Loading Ad';
+  String get loadingAd => 'Laai advertensie';
 
   @override
-  String get unlockAllFeatures => 'UNLOCK ALL FEATURES';
+  String get unlockAllFeatures => 'ONTGRENDEL ALLE FUNKSIES';
 
   @override
-  String get whatsIncluded => 'What\'s Included';
+  String get whatsIncluded => 'Wat is ingesluit';
 
   @override
-  String get featureWebSearching => 'Web searching';
+  String get featureWebSearching => 'Websoektog';
 
   @override
-  String get featureDuplicateImages => 'Duplicate Images';
+  String get featureDuplicateImages => 'Duplikaatbeelde';
 
   @override
-  String get featureFaceDetection => 'High quality face detection';
+  String get featureFaceDetection => 'Hoëgehalte gesigsopsporing';
 
   @override
-  String get featureUnlimitedAccess => 'Unlimited access';
+  String get featureUnlimitedAccess => 'Onbeperkte toegang';
 
   @override
-  String get featureRemoveAds => 'Remove ADS';
+  String get featureRemoveAds => 'Verwyder advertensies';
 
   @override
-  String get featureVipSupport => 'VIP Support';
+  String get featureVipSupport => 'VIP-ondersteuning';
 
   @override
   String get proTrialWeekly =>
-      'After 3 days Free trial ends, Weekly subscription will start. Cancel anytime 24 hours before renewal';
+      'Na 3 dae eindig die gratis proeftydperk en die weeklikse intekening begin. Kanselleer enige tyd 24 uur voor hernuwing';
 
   @override
-  String get continueForFree => 'CONTINUE FOR FREE  →';
+  String get continueForFree => 'GAAN GRATIS VOORT  →';
 
   @override
-  String get noPaymentNow => 'No payment Now';
+  String get noPaymentNow => 'Geen betaling nou nie';
 
   @override
-  String get selectImage => 'Select image';
+  String get selectImage => 'Kies beeld';
 
   @override
-  String get uploadingSerpApi => 'Uploading image and searching with SerpApi';
+  String get uploadingSerpApi => 'Laai beeld op en soek met SerpApi';
 
   @override
   String get communityGuidelinesBody =>
-      'Use Deep Image Search for lawful image lookup only.\n\nDo not use this app to harass, stalk, impersonate, or exploit anyone. Do not search for or share sexual content involving minors.\n\nRespect other people\'s privacy and the copyright of images you find. Results come from third-party websites and remain under those sites\' terms.\n\nWe may limit or refuse searches that abuse the service.';
+      'Gebruik Deep Image Search slegs vir wettige beeldsoektogte.\n\nMoenie hierdie program gebruik om iemand te teister, dophou, naboots of uitbuit nie. Moenie seksuele inhoud wat kinders betrek soek of deel nie.\n\nRespekteer ander se privaatheid en die kopiereg van beelde wat jy vind. Resultate kom van derdeparty-webwerwe en bly onder daardie werwe se voorwaardes.\n\nOns kan soektogte wat die diens misbruik beperk of weier.';
 
   @override
   String get privacyPolicyBody =>
-      'Deep Image Search processes images you pick, capture, or provide by URL so we can perform reverse image searches through SerpApi Google Lens.\n\nLocal photos are uploaded to a temporary file host so the search provider can read them. We do not keep uploaded images on a custom server.\n\nSearch results are retrieved from third-party websites. Those websites remain the source of the images and may have their own copyright and terms.\n\nHistory and favorites stay on this device. Analytics events such as app opens, search started, and search completed may be collected. We do not collect image contents in analytics.\n\nSubscriptions are processed by Apple or Google. We do not store payment card details.\n\nYou can delete local history and remove favorites from the app.';
+      'Deep Image Search verwerk beelde wat jy kies, neem of per URL gee sodat ons omgekeerde beeldsoektogte deur SerpApi Google Lens kan doen.\n\nPlaaslike foto\'s word na \'n tydelike lêergasheer opgelaai sodat die soekverskaffer dit kan lees. Ons hou nie opgelaaide beelde op \'n eie bediener nie.\n\nSoekresultate kom van derdeparty-webwerwe. Daardie webwerwe bly die bron van die beelde en kan hul eie kopiereg en voorwaardes hê.\n\nGeskiedenis en gunstelinge bly op hierdie toestel. Analise-gebeure soos programopeninge, soektog begin en soektog voltooi kan versamel word. Ons versamel nie beeldinhoud in analise nie.\n\nIntekeninge word deur Apple of Google verwerk. Ons stoor nie kaartbesonderhede nie.\n\nJy kan plaaslike geskiedenis uitvee en gunstelinge in die program verwyder.';
 
   @override
-  String get allowPhotoAccess => 'Allow photo access to search from gallery.';
+  String get allowPhotoAccess =>
+      'Laat foto-toegang toe om uit die gallery te soek.';
 
   @override
-  String get allowCameraAccess => 'Allow camera access to take a photo.';
+  String get allowCameraAccess =>
+      'Laat kamera-toegang toe om \'n foto te neem.';
 
   @override
-  String get emptyImage => 'The selected image is empty.';
+  String get emptyImage => 'Die gekose beeld is leeg.';
 
   @override
   String shareAppMessage(String url) {
-    return 'Try Deep Image Search: $url';
+    return 'Probeer Deep Image Search: $url';
   }
 }

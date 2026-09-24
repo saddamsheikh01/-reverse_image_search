@@ -5,8 +5,10 @@ import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../core/errors/app_exception.dart';
+import '../../core/errors/app_exception_l10n.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/picked_media.dart';
+import '../../l10n/app_localizations.dart';
 import '../../models/search_type.dart';
 import '../../models/user_models.dart';
 import '../../services/analytics_service.dart';
@@ -15,13 +17,13 @@ import '../home/image_source_sheet.dart';
 
 class SocialPlatform {
   const SocialPlatform({
-    required this.name,
+    required this.id,
     required this.icon,
     required this.color,
     required this.domains,
   });
 
-  final String name;
+  final String id;
   final IconData icon;
   final Color color;
   final List<String> domains;
@@ -29,30 +31,45 @@ class SocialPlatform {
 
 const socialPlatforms = [
   SocialPlatform(
-    name: 'Instagram',
+    id: 'instagram',
     icon: FontAwesomeIcons.instagram,
     color: Color(0xFF222222),
     domains: ['instagram.com'],
   ),
   SocialPlatform(
-    name: 'Facebook',
+    id: 'facebook',
     icon: FontAwesomeIcons.facebook,
     color: Color(0xFF1877F2),
     domains: ['facebook.com', 'fb.com'],
   ),
   SocialPlatform(
-    name: 'LinkedIn',
+    id: 'linkedin',
     icon: FontAwesomeIcons.linkedin,
     color: Color(0xFF0A66C2),
     domains: ['linkedin.com'],
   ),
   SocialPlatform(
-    name: 'Twitter',
+    id: 'twitter',
     icon: FontAwesomeIcons.twitter,
     color: AppColors.primary,
     domains: ['twitter.com', 'x.com'],
   ),
 ];
+
+String _platformName(AppLocalizations l10n, String id) {
+  switch (id) {
+    case 'instagram':
+      return l10n.instagram;
+    case 'facebook':
+      return l10n.facebook;
+    case 'linkedin':
+      return l10n.linkedin;
+    case 'twitter':
+      return l10n.twitter;
+    default:
+      return id;
+  }
+}
 
 class SocialSearchScreen extends ConsumerWidget {
   const SocialSearchScreen({super.key});
@@ -75,12 +92,15 @@ class SocialSearchScreen extends ConsumerWidget {
       if (context.mounted) context.push('/searching', extra: SearchType.all.apiValue);
     } on AppException catch (error) {
       if (!context.mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error.message)));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(localizedAppException(AppLocalizations.of(context), error))),
+      );
     }
   }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       backgroundColor: AppColors.page(context),
       appBar: AppBar(
@@ -91,9 +111,9 @@ class SocialSearchScreen extends ConsumerWidget {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.pop(),
         ),
-        title: const Text(
-          'Social Media Deep Search',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        title: Text(
+          l10n.modeSocialTitle,
+          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
         ),
       ),
       body: Column(
@@ -102,7 +122,7 @@ class SocialSearchScreen extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
             child: Text(
-              'Analyze your image through AI.',
+              l10n.analyzeImageThroughAi,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
@@ -134,14 +154,14 @@ class SocialSearchScreen extends ConsumerWidget {
                         children: [
                           FaIcon(
                             platform.icon,
-                            color: platform.name == 'Instagram'
+                            color: platform.id == 'instagram'
                                 ? AppColors.text(context)
                                 : platform.color,
                             size: 22,
                           ),
                           const SizedBox(width: 16),
                           Text(
-                            platform.name,
+                            _platformName(l10n, platform.id),
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
@@ -156,20 +176,20 @@ class SocialSearchScreen extends ConsumerWidget {
               },
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(bottom: 22),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 22),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 18,
                   height: 18,
                   child: CircularProgressIndicator(strokeWidth: 2.4, color: AppColors.primary),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
-                  'Loading Ad',
-                  style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w500),
+                  l10n.loadingAd,
+                  style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w500),
                 ),
               ],
             ),

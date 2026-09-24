@@ -625,4 +625,171 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get languageNameIndonesian => 'Endonezce';
+
+  @override
+  String get languageNameItalian => 'İtalyanca';
+
+  @override
+  String get languageNameAfrikaans => 'Afrikaanca';
+
+  @override
+  String get splashAdNotice => 'Bu işlem bir reklam gösterebilir';
+
+  @override
+  String get selectLanguageTitle => 'Dil seç';
+
+  @override
+  String get languageDefault => '(Varsayılan)';
+
+  @override
+  String get whoAreYouLookingFor => 'Kimi\narıyorsun?';
+
+  @override
+  String get typeFullNameHint => 'Tam adı yazın...';
+
+  @override
+  String get modeFaceTitle => 'YZ yüz analizi';
+
+  @override
+  String get modeFaceSubtitle =>
+      'Analiz için kamera kullanın veya galeriden seçin.';
+
+  @override
+  String get modeSocialTitle => 'Sosyal medya derin arama';
+
+  @override
+  String get modeSocialSubtitle => 'Analiz için sosyal platformları kullanın.';
+
+  @override
+  String get modeObjectTitle => 'YZ nesne ve yer işareti';
+
+  @override
+  String get modeObjectSubtitle =>
+      'Tanıma için kamera kullanın veya galeriden seçin.';
+
+  @override
+  String get modeSimilarTitle => 'Galeriden benzer yüzler';
+
+  @override
+  String get modeSimilarSubtitle => 'Yüz algılamak için Galeriyi kullanın.';
+
+  @override
+  String get modeWebTitle => 'Web\'de ara';
+
+  @override
+  String get modeWebSubtitle =>
+      'Web araması için kamera kullanın veya galeriden seçin.';
+
+  @override
+  String get modeDuplicateTitle => 'Yinelenen görseller';
+
+  @override
+  String get modeDuplicateSubtitle =>
+      'Galerinizi temizleyin, yinelenen görselleri silin';
+
+  @override
+  String get badgeNew => 'Yeni';
+
+  @override
+  String get badgePro => 'Pro';
+
+  @override
+  String get shareApp => 'Uygulamayı paylaş';
+
+  @override
+  String get moreApps => 'Diğer uygulamalar';
+
+  @override
+  String get rateUs => 'Bizi değerlendir';
+
+  @override
+  String get communityGuidelines => 'Topluluk kuralları';
+
+  @override
+  String get feedback => 'Geri bildirim';
+
+  @override
+  String get adBadge => 'Reklam';
+
+  @override
+  String get analyzeImageThroughAi => 'Görselinizi YZ ile analiz edin.';
+
+  @override
+  String get instagram => 'Instagram';
+
+  @override
+  String get facebook => 'Facebook';
+
+  @override
+  String get linkedin => 'LinkedIn';
+
+  @override
+  String get twitter => 'Twitter';
+
+  @override
+  String get loadingAd => 'Reklam yükleniyor';
+
+  @override
+  String get unlockAllFeatures => 'TÜM ÖZELLİKLERİN KİLİDİNİ AÇ';
+
+  @override
+  String get whatsIncluded => 'Neler dahil';
+
+  @override
+  String get featureWebSearching => 'Web araması';
+
+  @override
+  String get featureDuplicateImages => 'Yinelenen görseller';
+
+  @override
+  String get featureFaceDetection => 'Yüksek kaliteli yüz algılama';
+
+  @override
+  String get featureUnlimitedAccess => 'Sınırsız erişim';
+
+  @override
+  String get featureRemoveAds => 'Reklamları kaldır';
+
+  @override
+  String get featureVipSupport => 'VIP destek';
+
+  @override
+  String get proTrialWeekly =>
+      '3 günlük ücretsiz deneme bitince haftalık abonelik başlar. Yenilemeden 24 saat önce istediğiniz zaman iptal edin';
+
+  @override
+  String get continueForFree => 'ÜCRETSİZ DEVAM ET  →';
+
+  @override
+  String get noPaymentNow => 'Şimdi ödeme yok';
+
+  @override
+  String get selectImage => 'Görsel seç';
+
+  @override
+  String get uploadingSerpApi => 'Görsel yükleniyor ve SerpApi ile aranıyor';
+
+  @override
+  String get communityGuidelinesBody =>
+      'Deep Image Search\'ü yalnızca yasal görsel araması için kullanın.\n\nBu uygulamayı kimseyi taciz etmek, takip etmek, taklit etmek veya sömürmek için kullanmayın. Reşit olmayanlarla ilgili cinsel içerik aramayın veya paylaşmayın.\n\nBaşkalarının gizliliğine ve bulduğunuz görsellerin telif haklarına saygı gösterin. Sonuçlar üçüncü taraf sitelerden gelir ve o sitelerin koşullarına tabidir.\n\nHizmeti kötüye kullanan aramaları sınırlayabilir veya reddedebiliriz.';
+
+  @override
+  String get privacyPolicyBody =>
+      'Deep Image Search, SerpApi Google Lens üzerinden ters görsel araması yapmak için seçtiğiniz, çektiğiniz veya URL ile verdiğiniz görselleri işler.\n\nYerel fotoğraflar, arama sağlayıcısının okuyabilmesi için geçici bir dosya sunucusuna yüklenir. Yüklenen görselleri özel bir sunucuda tutmayız.\n\nArama sonuçları üçüncü taraf sitelerden alınır. Bu siteler görsellerin kaynağı olmaya devam eder ve kendi telif hakları ile koşulları olabilir.\n\nGeçmiş ve favoriler bu cihazda kalır. Uygulama açma, arama başlatma ve tamamlama gibi analitik olaylar toplanabilir. Analitikte görsel içeriği toplamayız.\n\nAbonelikler Apple veya Google tarafından işlenir. Kart bilgilerini saklamayız.\n\nUygulamadan yerel geçmişi silebilir ve favorileri kaldırabilirsiniz.';
+
+  @override
+  String get allowPhotoAccess =>
+      'Galeriden aramak için fotoğraf erişimine izin verin.';
+
+  @override
+  String get allowCameraAccess =>
+      'Fotoğraf çekmek için kamera erişimine izin verin.';
+
+  @override
+  String get emptyImage => 'Seçilen görsel boş.';
+
+  @override
+  String shareAppMessage(String url) {
+    return 'Deep Image Search\'ü dene: $url';
+  }
 }

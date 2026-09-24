@@ -632,4 +632,170 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get languageNameIndonesian => 'Indonesia';
+
+  @override
+  String get languageNameItalian => 'Italia';
+
+  @override
+  String get languageNameAfrikaans => 'Afrikaans';
+
+  @override
+  String get splashAdNotice => 'Tindakan ini mungkin menampilkan iklan';
+
+  @override
+  String get selectLanguageTitle => 'Pilih bahasa';
+
+  @override
+  String get languageDefault => '(Default)';
+
+  @override
+  String get whoAreYouLookingFor => 'Siapa yang\nAnda cari?';
+
+  @override
+  String get typeFullNameHint => 'Ketik nama lengkap...';
+
+  @override
+  String get modeFaceTitle => 'Analisis wajah AI';
+
+  @override
+  String get modeFaceSubtitle =>
+      'Gunakan kamera atau pilih dari galeri untuk dianalisis.';
+
+  @override
+  String get modeSocialTitle => 'Pencarian mendalam media sosial';
+
+  @override
+  String get modeSocialSubtitle => 'Gunakan platform sosial untuk analisis.';
+
+  @override
+  String get modeObjectTitle => 'Objek dan landmark AI';
+
+  @override
+  String get modeObjectSubtitle =>
+      'Gunakan kamera atau pilih dari galeri untuk pengenalan.';
+
+  @override
+  String get modeSimilarTitle => 'Wajah serupa dari galeri';
+
+  @override
+  String get modeSimilarSubtitle => 'Gunakan Galeri untuk mendeteksi wajah.';
+
+  @override
+  String get modeWebTitle => 'Cari dari web';
+
+  @override
+  String get modeWebSubtitle =>
+      'Gunakan kamera atau pilih dari galeri untuk mencari di web.';
+
+  @override
+  String get modeDuplicateTitle => 'Gambar duplikat';
+
+  @override
+  String get modeDuplicateSubtitle =>
+      'Bersihkan galeri dan hapus gambar duplikat';
+
+  @override
+  String get badgeNew => 'Baru';
+
+  @override
+  String get badgePro => 'Pro';
+
+  @override
+  String get shareApp => 'Bagikan aplikasi';
+
+  @override
+  String get moreApps => 'Aplikasi lain';
+
+  @override
+  String get rateUs => 'Beri rating';
+
+  @override
+  String get communityGuidelines => 'Pedoman komunitas';
+
+  @override
+  String get feedback => 'Masukan';
+
+  @override
+  String get adBadge => 'Iklan';
+
+  @override
+  String get analyzeImageThroughAi => 'Analisis gambar Anda dengan AI.';
+
+  @override
+  String get instagram => 'Instagram';
+
+  @override
+  String get facebook => 'Facebook';
+
+  @override
+  String get linkedin => 'LinkedIn';
+
+  @override
+  String get twitter => 'Twitter';
+
+  @override
+  String get loadingAd => 'Memuat iklan';
+
+  @override
+  String get unlockAllFeatures => 'BUKA SEMUA FITUR';
+
+  @override
+  String get whatsIncluded => 'Yang termasuk';
+
+  @override
+  String get featureWebSearching => 'Pencarian web';
+
+  @override
+  String get featureDuplicateImages => 'Gambar duplikat';
+
+  @override
+  String get featureFaceDetection => 'Deteksi wajah berkualitas tinggi';
+
+  @override
+  String get featureUnlimitedAccess => 'Akses tanpa batas';
+
+  @override
+  String get featureRemoveAds => 'Hapus iklan';
+
+  @override
+  String get featureVipSupport => 'Dukungan VIP';
+
+  @override
+  String get proTrialWeekly =>
+      'Setelah uji coba gratis 3 hari berakhir, langganan mingguan dimulai. Batalkan kapan saja 24 jam sebelum perpanjangan';
+
+  @override
+  String get continueForFree => 'LANJUT GRATIS  →';
+
+  @override
+  String get noPaymentNow => 'Tidak ada pembayaran sekarang';
+
+  @override
+  String get selectImage => 'Pilih gambar';
+
+  @override
+  String get uploadingSerpApi => 'Mengunggah gambar dan mencari dengan SerpApi';
+
+  @override
+  String get communityGuidelinesBody =>
+      'Gunakan Deep Image Search hanya untuk pencarian gambar yang sah.\n\nJangan gunakan aplikasi ini untuk melecehkan, menguntit, meniru, atau mengeksploitasi siapa pun. Jangan mencari atau membagikan konten seksual yang melibatkan anak di bawah umur.\n\nHormati privasi orang lain dan hak cipta gambar yang Anda temukan. Hasil berasal dari situs pihak ketiga dan tetap mengikuti ketentuan situs tersebut.\n\nKami dapat membatasi atau menolak pencarian yang menyalahgunakan layanan.';
+
+  @override
+  String get privacyPolicyBody =>
+      'Deep Image Search memproses gambar yang Anda pilih, ambil, atau berikan lewat URL agar pencarian gambar terbalik dapat dilakukan melalui SerpApi Google Lens.\n\nFoto lokal diunggah ke host file sementara agar penyedia pencarian dapat membacanya. Kami tidak menyimpan gambar yang diunggah di server khusus.\n\nHasil pencarian diambil dari situs pihak ketiga. Situs tersebut tetap menjadi sumber gambar dan mungkin memiliki hak cipta serta ketentuan sendiri.\n\nRiwayat dan favorit tetap di perangkat ini. Peristiwa analitik seperti membuka aplikasi, pencarian dimulai, dan pencarian selesai dapat dikumpulkan. Kami tidak mengumpulkan isi gambar dalam analitik.\n\nLangganan diproses oleh Apple atau Google. Kami tidak menyimpan detail kartu pembayaran.\n\nAnda dapat menghapus riwayat lokal dan menghapus favorit dari aplikasi.';
+
+  @override
+  String get allowPhotoAccess =>
+      'Izinkan akses foto untuk mencari dari galeri.';
+
+  @override
+  String get allowCameraAccess => 'Izinkan akses kamera untuk mengambil foto.';
+
+  @override
+  String get emptyImage => 'Gambar yang dipilih kosong.';
+
+  @override
+  String shareAppMessage(String url) {
+    return 'Coba Deep Image Search: $url';
+  }
 }

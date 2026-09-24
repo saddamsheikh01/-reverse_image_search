@@ -4,26 +4,49 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/storage/local_storage.dart';
 import '../../core/theme/app_colors.dart';
+import '../../l10n/app_localizations.dart';
 import '../controllers.dart';
 
 class _Lang {
-  const _Lang(this.code, this.name, this.flag, {this.isDefault = false});
+  const _Lang(this.code, this.flag, {this.isDefault = false});
   final String code;
-  final String name;
   final String flag;
   final bool isDefault;
 }
 
 const _languages = [
-  _Lang('en', 'English', '🇬🇧', isDefault: true),
-  _Lang('ar', 'Arabic', '🇸🇦'),
-  _Lang('de', 'German', '🇩🇪'),
-  _Lang('it', 'Italian', '🇮🇹'),
-  _Lang('fr', 'French', '🇫🇷'),
-  _Lang('hi', 'Hindi', '🇮🇳'),
-  _Lang('es', 'Spanish', '🇪🇸'),
-  _Lang('af', 'Afrikaans', '🇿🇦'),
+  _Lang('en', '🇬🇧', isDefault: true),
+  _Lang('ar', '🇸🇦'),
+  _Lang('de', '🇩🇪'),
+  _Lang('it', '🇮🇹'),
+  _Lang('fr', '🇫🇷'),
+  _Lang('hi', '🇮🇳'),
+  _Lang('es', '🇪🇸'),
+  _Lang('af', '🇿🇦'),
 ];
+
+String _languageName(AppLocalizations l10n, String code) {
+  switch (code) {
+    case 'en':
+      return l10n.languageNameEnglish;
+    case 'ar':
+      return l10n.languageNameArabic;
+    case 'de':
+      return l10n.languageNameGerman;
+    case 'it':
+      return l10n.languageNameItalian;
+    case 'fr':
+      return l10n.languageNameFrench;
+    case 'hi':
+      return l10n.languageNameHindi;
+    case 'es':
+      return l10n.languageNameSpanish;
+    case 'af':
+      return l10n.languageNameAfrikaans;
+    default:
+      return code;
+  }
+}
 
 class LanguageScreen extends ConsumerWidget {
   const LanguageScreen({super.key, this.fromSettings = false});
@@ -32,6 +55,7 @@ class LanguageScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
     final selected = ref.watch(localeProvider).languageCode;
 
     return Scaffold(
@@ -48,9 +72,9 @@ class LanguageScreen extends ConsumerWidget {
             }
           },
         ),
-        title: const Text(
-          'Select Language',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+        title: Text(
+          l10n.selectLanguageTitle,
+          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
         ),
         actions: [
           Padding(
@@ -74,7 +98,7 @@ class LanguageScreen extends ConsumerWidget {
                   context.go('/home');
                 }
               },
-              child: const Text('Next'),
+              child: Text(l10n.next),
             ),
           ),
         ],
@@ -91,6 +115,7 @@ class LanguageScreen extends ConsumerWidget {
         itemBuilder: (context, index) {
           final item = _languages[index];
           final isSelected = selected == item.code;
+          final name = _languageName(l10n, item.code);
           return Material(
             color: isSelected ? AppColors.primary : AppColors.card(context),
             elevation: 0,
@@ -113,7 +138,7 @@ class LanguageScreen extends ConsumerWidget {
                     Text(item.flag, style: const TextStyle(fontSize: 28)),
                     const Spacer(),
                     Text(
-                      item.isDefault ? '${item.name} (Default)' : item.name,
+                      item.isDefault ? '$name ${l10n.languageDefault}' : name,
                       style: TextStyle(
                         color: isSelected ? Colors.white : AppColors.text(context),
                         fontWeight: FontWeight.w600,

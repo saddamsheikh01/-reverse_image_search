@@ -4,6 +4,7 @@ import 'package:share_plus/share_plus.dart';
 
 import '../../core/constants/app_constants.dart';
 import '../../core/theme/app_colors.dart';
+import '../../l10n/app_localizations.dart';
 import '../../services/url_service.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -16,6 +17,7 @@ class AppDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final isDark = AppColors.isDark(context);
     final textColor = AppColors.text(context);
     final iconColor = isDark ? Colors.white : AppColors.primary;
@@ -35,7 +37,7 @@ class AppDrawer extends StatelessWidget {
               const Center(child: _DrawerLogo()),
               const SizedBox(height: 18),
               Text(
-                'Deep Image Search',
+                l10n.appName,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: textColor,
@@ -46,32 +48,34 @@ class AppDrawer extends StatelessWidget {
               const SizedBox(height: 36),
               _DrawerItem(
                 icon: Icons.share_outlined,
-                label: 'Share App',
+                label: l10n.shareApp,
                 color: textColor,
                 iconColor: iconColor,
                 onTap: () => _open(context, () {
                   Share.share(
-                    'Try Deep Image Search: https://play.google.com/store/apps/details?id=${AppConstants.packageName}',
+                    l10n.shareAppMessage(
+                      'https://play.google.com/store/apps/details?id=${AppConstants.packageName}',
+                    ),
                   );
                 }),
               ),
               _DrawerItem(
                 icon: Icons.translate,
-                label: 'Select Language',
+                label: l10n.selectLanguageTitle,
                 color: textColor,
                 iconColor: iconColor,
                 onTap: () => _open(context, () => context.push('/language-settings')),
               ),
               _DrawerItem(
                 icon: Icons.verified_user_outlined,
-                label: 'Privacy Policy',
+                label: l10n.privacyPolicy,
                 color: textColor,
                 iconColor: iconColor,
                 onTap: () => _open(context, () => context.push('/privacy')),
               ),
               _DrawerItem(
                 icon: Icons.login,
-                label: 'More Apps',
+                label: l10n.moreApps,
                 color: textColor,
                 iconColor: iconColor,
                 ad: true,
@@ -83,7 +87,7 @@ class AppDrawer extends StatelessWidget {
               ),
               _DrawerItem(
                 icon: Icons.star_border,
-                label: 'Rate Us',
+                label: l10n.rateUs,
                 color: textColor,
                 iconColor: iconColor,
                 onTap: () => _open(context, () {
@@ -94,14 +98,14 @@ class AppDrawer extends StatelessWidget {
               ),
               _DrawerItem(
                 icon: Icons.warning_amber_rounded,
-                label: 'Community Guidelines',
+                label: l10n.communityGuidelines,
                 color: textColor,
                 iconColor: iconColor,
                 onTap: () => _open(context, () => context.push('/community')),
               ),
               _DrawerItem(
                 icon: Icons.chat_bubble_outline,
-                label: 'Feedback',
+                label: l10n.feedback,
                 color: textColor,
                 iconColor: iconColor,
                 showDivider: false,
@@ -160,9 +164,9 @@ class _DrawerItem extends StatelessWidget {
                     color: AppColors.primary,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: const Text(
-                    'Ad',
-                    style: TextStyle(
+                  child: Text(
+                    AppLocalizations.of(context).adBadge,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 11,
                       fontWeight: FontWeight.w700,
